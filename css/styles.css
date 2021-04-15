@@ -1,0 +1,121 @@
+:root {
+    --card-width: 400px;
+    --main-color: rgb(86,79,112);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexContainer {
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+    width: var(--card-width);
+    height: calc(var(--card-width) * 1.5);
+    background-color: rgb(202, 217, 230);
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.topCardBackground {
+    background-color: var(--main-color);
+    width: 100%;
+    height: calc(var(--card-width)*0.4);
+}
+
+.userProfileImage {
+    width: calc(var(--card-width)*0.5);
+    height: calc(var(--card-width)*0.5);
+    border-radius: 50%;
+    border: 2px solid rgb(202, 217, 230);
+    margin-top: calc(var(--card-width)*(-0.25));
+    overflow: hidden;
+    display: flex;
+}
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    height: calc(var(--card-width)*0.5);
+}
+
+.divStar {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-left: calc(var(--card-width)*(-0.3));
+    margin-top: calc(var(--card-width)*(0.41));
+    border-radius: 50%;
+}
+
+.userName {
+    color: var(--main-color);
+    padding: 10px;
+}
+
+.userPosition {
+    color: var(--main-color);
+    padding: 0px;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.userInfo {
+    padding: 6px;
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialLinks > div {
+    width: 75%;
+    padding: 7px;
+    text-align: center;
+    
+}
+.viewCV {
+    color: rgb(55, 55, 247);
+    font-weight: bold;
+    border: 2px solid rgb(55, 55, 247);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.makeOffer {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(55, 55, 247);
+    border: 2px solid rgb(55, 55, 247);
+    border-radius: 10px;
+}
+
+.online {
+    margin: 10px;
+    color: grey;
+}
+
+p {
+    text-align: center;
+}
