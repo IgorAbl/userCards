@@ -119,3 +119,18 @@
 p {
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+}
+.linkOffer {
+    color: white;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:visited {
+    color: black;
+}
