@@ -51,6 +51,7 @@
     object-fit: cover;
     width: 100%;
     height: calc(var(--card-width)*0.5);
+    margin-bottom: auto;
 }
 
 .divStar {
@@ -58,7 +59,7 @@
     height: 40px;
     background-color: rgb(255, 255, 255);
     margin-left: calc(var(--card-width)*(-0.3));
-    margin-top: calc(var(--card-width)*(0.41));
+    margin-top: auto;
     border-radius: 50%;
 }
 
@@ -133,4 +134,8 @@ a:hover {
 
 a:visited {
     color: black;
+}
+
+h2 {
+    text-align: center;
 }
